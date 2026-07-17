@@ -45,8 +45,8 @@ ul{list-style:none;}
 ::-webkit-scrollbar-thumb{background:var(--orange);border-radius:3px;}
 
 /* ── Utility ───────────────────────────────────────────────── */
-.section{padding:6rem 1.5rem;max-width:1200px;margin:0 auto;}
-.section-full{padding:6rem 1.5rem;}
+.section{padding:6rem 1.5rem;max-width:1200px;margin:0 auto;position:relative;}
+.section-full{padding:6rem 1.5rem;position:relative;overflow:hidden;}
 .section-title{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.9rem,4vw,2.8rem);font-weight:700;letter-spacing:-.02em;margin-bottom:.4rem;background:linear-gradient(135deg,var(--white),var(--gray));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 .section-sub{color:var(--muted);font-size:1rem;margin-bottom:3rem;}
 .accent-line{width:56px;height:4px;background:var(--grad-o);border-radius:2px;margin-bottom:1rem;}
@@ -778,4 +778,110 @@ textarea.form-input{resize:vertical;min-height:110px;}
 @keyframes guidanceLine {
   0%, 100% { x2: 15px; y2: 85px; }
   50% { x2: 80px; y2: 20px; }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   ENHANCED BACKGROUND ANIMATIONS
+═══════════════════════════════════════════════════════════ */
+
+/* ── Tech Grid Background ── */
+.tech-grid-bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  background-image: 
+    linear-gradient(rgba(249,115,22,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(249,115,22,0.025) 1px, transparent 1px);
+  background-size: 60px 60px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 80% at 50% 50%, #000 30%, transparent 100%);
+  mask-image: radial-gradient(ellipse 70% 80% at 50% 50%, #000 30%, transparent 100%);
+}
+
+.tech-grid-bg::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at 20% 80%, rgba(16,185,129,0.02) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(234,179,8,0.02) 0%, transparent 50%);
+}
+
+/* ── Data Flow Background (Skills) ── */
+.data-flow-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(100vw, 800px);
+  height: min(100vw, 800px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hex-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid rgba(249,115,22,0.04);
+}
+
+.ring-1 {
+  width: 40%;
+  height: 40%;
+  border-style: dashed;
+  animation: spin 30s linear infinite reverse;
+}
+
+.ring-2 {
+  width: 75%;
+  height: 75%;
+  border-top: 1px solid rgba(16,185,129,0.08);
+  border-bottom: 1px solid rgba(16,185,129,0.08);
+  animation: spin 45s linear infinite;
+}
+
+.data-node {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--gold);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--gold);
+  opacity: 0;
+}
+
+.node-1 { top: 20%; left: 30%; animation: nodePulse 8s ease-in-out infinite; }
+.node-2 { top: 70%; left: 70%; animation: nodePulse 8s ease-in-out infinite 3s; }
+.node-3 { top: 40%; left: 80%; animation: nodePulse 8s ease-in-out infinite 6s; }
+
+@keyframes nodePulse {
+  0%, 100% { opacity: 0; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.5); box-shadow: 0 0 20px var(--gold); }
+}
+
+/* ── Timeline Pulse (Defense) ── */
+.timeline-pulse {
+  position: absolute;
+  left: -2px; /* aligned with the 3px width timeline line */
+  top: 0;
+  width: 7px;
+  height: 25px;
+  background: var(--orange);
+  border-radius: 10px;
+  box-shadow: 0 0 15px var(--orange), 0 0 30px var(--orange);
+  z-index: 2;
+  animation: pulseDown 8s ease-in-out infinite;
+}
+
+@keyframes pulseDown {
+  0% { top: 0; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
 }
