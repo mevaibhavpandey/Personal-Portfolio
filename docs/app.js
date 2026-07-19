@@ -14,31 +14,31 @@ const personalInfo = {
 };
 
 const aboutParagraphs = [
-  'I am a B.E. student in Computer Science & Engineering at BMS Institute of Technology & Management, Bengaluru (2023â€“2027), maintaining a CGPA of 8.86. My academic journey is driven by a deep fascination with Software Engineering, Full-Stack web architectures and Applied Artificial Intelligence.',
-  'My technical focus spans robust system design, database indexing, API development and machine learning pipelines. I have engineered real-time analytical dashboards that process 60+ GB of complex oceanographic datasets and track 20,000+ data nodes concurrently â€” bridging backend scalability with clean web interfaces.',
-  'Beyond core coding, I am the Founder & President of the ASTRA Club at BMSIT&M, where I manage technical workshops, strategic engineering projects and budget distributions for a student body of 200+ members. I also bring the discipline of a national-level basketball gold medalist to my software engineering projects.',
-  'My selections as All-India Rank 31 in NDA and All-India Rank 50 in TES demonstrate a proven track rate of high-pressure decision making, leadership resilience and mental resolve â€” vital qualities I bring to scaling software teams and systems.'
+  'I am a B.E. student in Computer Science & Engineering at BMS Institute of Technology & Management, Bengaluru (2023\u20132027), maintaining a CGPA of 8.86. My academic journey is driven by a deep fascination with Software Engineering, Full-Stack web architectures and Applied Artificial Intelligence.',
+  'My technical focus spans robust system design, database indexing, API development and machine learning pipelines. I have engineered real-time analytical dashboards that process 60+ GB of complex oceanographic datasets and track 20,000+ data nodes concurrently \u2014 bridging backend scalability with clean web interfaces.',
+  'Beyond core coding, I am the Founder & President of the ASTRA Defence Tech Club at BMSIT&M, where I manage technical workshops, strategic engineering projects and budget distributions for a student body of 200+ members. I also bring the discipline of a national-level basketball gold medalist to my software engineering projects.',
+  'My selections as All-India Rank 31 in NDA and All-India Rank 50 in TES demonstrate a proven track rate of high-pressure decision making, leadership resilience and mental resolve \u2014 vital qualities I bring to scaling software teams and systems.'
 ];
 
 const skills = [
   {
     category: 'Full-Stack Development',
-    icon: 'ðŸŒ',
+    icon: '\uD83C\uDF10',
     items: ['React.js', 'Node.js', 'Express', 'JavaScript (ES6+)', 'TypeScript', 'HTML5 / CSS3', 'RESTful APIs', 'PostgreSQL', 'MongoDB', 'SQL']
   },
   {
     category: 'Software Engineering (SDE)',
-    icon: 'ðŸ’»',
+    icon: '\uD83D\uDCBB',
     items: ['Data Structures & Algorithms (DSA)', 'Object-Oriented Programming (OOP)', 'System Design', 'Git / GitHub', 'Docker', 'Kubernetes', 'AWS', 'Linux Shell Scripting', 'CI/CD Pipelines']
   },
   {
     category: 'AI / ML & Intelligent Systems',
-    icon: 'ðŸ§ ',
+    icon: '\uD83E\uDDE0',
     items: ['Machine Learning', 'Large Language Models (LLMs)', 'RAG (Retrieval-Augmented Generation)', 'Vector Databases', 'TensorFlow', 'Scikit-Learn', 'Pandas / NumPy', 'Computer Vision', 'OpenCV', 'Neural Networks']
   },
   {
     category: 'Aerospace & Embedded Systems',
-    icon: 'ðŸ›¸',
+    icon: '\uD83D\uDEF8',
     items: ['ROS (Robot Operating System)', 'PX4 Autopilot', 'Gazebo Simulation', 'Sensor Fusion', 'Visual-Inertial Odometry (VIO)', 'Autonomous Path Planning', 'MATLAB']
   }
 ];
@@ -61,14 +61,14 @@ const projects = [
       'Autonomous Collision Avoidance: Incorporates obstacle avoidance and vector field histogram path planning to safely navigate cluttered indoor spaces.'
     ],
     color: '#10B981',
-    icon: 'ðŸš',
+    icon: '\uD83D\uDE80',
     github: 'https://github.com/mevaibhavpandey/astra-uav'
   },
   {
     id: 2,
     title: 'Argo-Based FloatChat AI',
     subtitle: 'Oceanographic AI Platform',
-    description: 'An AI-powered chatbot for analyzing massive ocean datasets. Capable of processing 60+ GB NetCDF files and generating rich summaries, visualizations and anomaly-based maritime threat identification â€” enabling real-time oceanographic intelligence.',
+    description: 'An AI-powered chatbot for analyzing massive ocean datasets. Capable of processing 60+ GB NetCDF files and generating rich summaries, visualizations and anomaly-based maritime threat identification \u2014 enabling real-time oceanographic intelligence.',
     tech: ['Python', 'Pandas', 'Xarray', 'PostgreSQL', 'NumPy', 'Scikit-Learn', 'Dask', 'Node.js', 'REST API'],
     metrics: [
       { label: 'Dataset Size', value: '60+ GB' },
@@ -81,7 +81,7 @@ const projects = [
       'Automated Visualization: Automatically renders complex temperature and salinity depth contours using Matplotlib plotting hooks.'
     ],
     color: '#F97316',
-    icon: 'ðŸŒŠ',
+    icon: '\uD83C\uDF0A',
     github: 'https://github.com/mevaibhavpandey/Argo-FloatChat'
   },
   {
@@ -101,7 +101,7 @@ const projects = [
       'Anomaly Detection: Employs statistical clustering models to detect shipping trajectory anomalies and alert command centers of potential dark vessels.'
     ],
     color: '#EAB308',
-    icon: 'ðŸ›¥ï¸',
+    icon: '\uD83D\uDEF3\uFE0F',
     github: 'https://github.com/mevaibhavpandey/navsight-ai-maritime-awareness',
     live: 'https://mevaibhavpandey.github.io/navsight-ai-maritime-awareness/'
   },
@@ -122,7 +122,7 @@ const projects = [
       'AI Triage Classifier: Parses bystander emergency reports through symptom matrices to categorize incident priority states.'
     ],
     color: '#EF4444',
-    icon: 'ðŸš‘',
+    icon: '\uD83D\uDE91',
     github: 'https://github.com/mevaibhavpandey/Ambulance-dispatch-system'
   },
   {
@@ -142,7 +142,7 @@ const projects = [
       'Active Beam Steering: Controls phased array antenna array delays to steer radar waves without mechanical moving parts.'
     ],
     color: '#8B5CF6',
-    icon: 'ðŸ“¡',
+    icon: '\uD83D\uDCE1',
     github: 'https://github.com/mevaibhavpandey/PLFM_RADAR'
   },
   {
@@ -162,7 +162,7 @@ const projects = [
       'Flight Data Reporting: Automatically logs missile G-loads, acceleration vectors and final closest point of approach statistics.'
     ],
     color: '#EC4899',
-    icon: 'ðŸŽ¯',
+    icon: '\uD83C\uDFAF',
     github: 'https://github.com/mevaibhavpandey/Radar-simulation',
     live: 'https://mevaibhavpandey.github.io/Radar-simulation/'
   },
@@ -183,7 +183,7 @@ const projects = [
       'Briefing Embeds: Integrates interactive multimedia players and briefing slides to display video historical segments.'
     ],
     color: '#059669',
-    icon: 'ðŸ‡®ðŸ‡³',
+    icon: '\uD83C\uDDEE\uD83C\uDDF3',
     github: 'https://github.com/mevaibhavpandey/indian-military-operations-timeline',
     live: 'https://mevaibhavpandey.github.io/indian-military-operations-timeline/'
   },
@@ -204,7 +204,7 @@ const projects = [
       'Responsive HUD UI: Uses clean CSS transitions and dark mode presets to present an immersive testing layout.'
     ],
     color: '#38BDF8',
-    icon: 'â “',
+    icon: '\u2753',
     github: 'https://github.com/mevaibhavpandey/Quiz-Application'
   }
 ];
@@ -226,7 +226,7 @@ const certifications = [
     description: "Completed Oracle's AI Foundations Associate program covering AI/ML fundamentals, deep learning, neural networks and LLMs on Oracle Cloud Infrastructure (OCI).",
     file: 'assets/pdfs/Oracle Certificate.pdf',
     type: 'pdf',
-    icon: 'ðŸ›ï¸'
+    icon: '\uD83D\uDEDB\uFE0F'
   },
   {
     id: 2,
@@ -235,7 +235,7 @@ const certifications = [
     description: 'Completed NPTEL course on advanced robotics: manipulators, kinematics, dynamics, workspace analysis and motion planning.',
     file: 'assets/pdfs/NPTEL Robotics.pdf',
     type: 'pdf',
-    icon: 'ðŸ¤–'
+    icon: '\uD83E\uDD16'
   },
   {
     id: 3,
@@ -244,16 +244,16 @@ const certifications = [
     description: 'Completed NPTEL certification on LLMs covering transformer architecture, prompt engineering, fine-tuning and generative AI applications.',
     file: 'assets/pdfs/NPTEL LLM.pdf',
     type: 'pdf',
-    icon: 'ðŸ§¬'
+    icon: '\uD83E\uDDEC'
   },
   {
     id: 4,
     title: 'ICMOTA Participation Certificate',
-    issuer: 'IIT BHU â€” International Conference on Mathematical Optimization Theory and Applications',
+    issuer: 'IIT BHU \u2014 International Conference on Mathematical Optimization Theory and Applications',
     description: 'Certificate of participation at ICMOTA (International Conference on Mathematical Optimization Theory and Applications) hosted at IIT Varanasi (BHU).',
     file: 'assets/images/certifications/ICMOTA Certificate.jpeg',
     type: 'image',
-    icon: 'ðŸŽ–ï¸'
+    icon: '\uD83C\uDF96\uFE0F'
   },
   {
     id: 5,
@@ -262,35 +262,35 @@ const certifications = [
     description: 'Certificate from a comprehensive Life Skills and Employability Skills program covering workplace communication, professional ethics and teamwork.',
     file: 'assets/images/certifications/Life Skill Certificate.jpeg',
     type: 'image',
-    icon: 'ðŸŒ±'
+    icon: '\uD83C\uDF31'
   },
   {
     id: 6,
     title: 'Prepare Data for ML APIs on Google Cloud',
-    issuer: 'Google Cloud â€” Smart Analytics Skill Badge',
+    issuer: 'Google Cloud \u2014 Smart Analytics Skill Badge',
     description: "Completed Google Cloud's Skill Badge for Smart Analytics: preparing data for ML APIs on Google Cloud, covering BigQuery, Cloud Storage and AI/ML API integrations (Introductory level).",
     file: null,
     link: 'https://www.cloudskillsboost.google/',
     type: 'external',
-    icon: 'â˜ï¸'
+    icon: '\u2601\uFE0F'
   }
 ];
 
 const achievements = [
   {
     id: 1,
-    title: 'Founder & President â€” ASTRA Club',
-    org: 'BMSIT&M, Bengaluru (Aerospace & UAV Prototyping)',
-    description: 'Founded and lead the campus-wide ASTRA aeromodelling and aerospace technology club. Spearheaded drone building labs, fixed-wing glider assembly tutorials and multi-rotor flight control system workshops for over 200+ engineering students. Secured funding for drone components and test benches.',
-    icon: 'ðŸš€',
+    title: 'Founder & President \u2014 ASTRA Defence Tech Club',
+    organization: 'BMS Institute of Technology & Management',
+    description: 'Founded and lead the campus-wide ASTRA Defence Technology & Autonomous Systems club. Spearheaded UAV R&D labs, autonomous flight control system workshops, and defence engineering projects for over 200+ engineering students. Secured funding for drone components and test benches.',
+    icon: '\uD83D\uDE80',
     color: '#F97316'
   },
   {
     id: 2,
-    title: 'Track Prize Winner â€” ANVESHANA National Hackathon',
+    title: 'Track Prize Winner \u2014 ANVESHANA National Hackathon',
     org: 'BMSIT&M, Bengaluru',
     description: 'Secured a major track prize at the prestigious ANVESHANA National Hackathon, hosted by BMSIT&M. Designed and prototyped a real-world software system focused on embedded tracking and smart navigation.',
-    icon: 'ðŸ¥‡',
+    icon: '\uD83E\uDD47',
     color: '#EAB308',
     images: [
       'assets/images/achievements/Anveshana Certificate.jpeg',
@@ -299,10 +299,10 @@ const achievements = [
   },
   {
     id: 3,
-    title: '2nd Place â€” InCSEption Inter-College Hackathon',
+    title: '2nd Place \u2014 InCSEption Inter-College Hackathon',
     org: 'BMSIT&M Software Hackathon',
     description: 'Won 2nd place in a highly competitive inter-college software hackathon. Engineered a real-time data streaming pipeline with anomaly detection APIs, demonstrating high proficiency in system-level programming and rapid backend development.',
-    icon: 'ðŸ¥ˆ',
+    icon: '\uD83E\uDD48',
     color: '#94A3B8',
     images: [
       'assets/images/achievements/Incsepetion Team certificate.jpeg',
@@ -311,34 +311,34 @@ const achievements = [
   },
   {
     id: 4,
-    title: 'Research Presenter â€” ICMOTA (IIT Varanasi)',
+    title: 'Research Presenter \u2014 ICMOTA (IIT Varanasi)',
     org: 'International Conference on Mathematical Optimization Theory and Applications',
     description: 'Invited to participate and present at ICMOTA hosted at IIT BHU. Engaged with optimization experts and software researchers to showcase research on autonomous navigation SLAM models and sensor fusion applications.',
-    icon: 'ðŸŽ–ï¸',
+    icon: '\uD83C\uDF96\uFE0F',
     color: '#A855F7'
   },
   {
     id: 5,
-    title: 'AIR 31 â€” 153rd NDA Course (IAF Flying Branch)',
+    title: 'AIR 31 \u2014 153rd NDA Course (IAF Flying Branch)',
     org: 'Union Public Service Commission (UPSC)',
     description: 'Achieved an outstanding All-India Rank of 31 in the NDA (I) 2024 recommended list, qualifying for the Indian Air Force Flying Branch based on aptitude, medical standards and officer personality traits.',
-    icon: 'âœˆï¸',
+    icon: '\u2708\uFE0F',
     color: '#60A5FA'
   },
   {
     id: 6,
-    title: 'AIR 50 â€” 52nd TES Course (Indian Army)',
+    title: 'AIR 50 \u2014 52nd TES Course (Indian Army)',
     org: 'Indian Army Technical Entry Scheme',
     description: 'Secured All-India Rank 50 in the Indian Army TES-52 course, verifying high technological aptitude, engineering mindset and leadership qualities.',
-    icon: 'â­',
+    icon: '\u2B50',
     color: '#10B981'
   },
   {
     id: 7,
-    title: 'National-Level Basketball â€” Gold Medalist',
+    title: 'National-Level Basketball \u2014 Gold Medalist',
     org: 'Regional / College Athletics',
     description: 'Competed at national level in basketball and clinched a gold medal at the regional tournament, demonstrating team leadership and athletic excellence.',
-    icon: 'ðŸ€',
+    icon: '\uD83C\uDFC0',
     color: '#F97316'
   }
 ];
@@ -550,7 +550,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="proj-bullets">
           ${p.bullets.map(b => `
             <div class="proj-bullet-item">
-              <span class="bullet-icon">âœ¦</span>
+              <span class="bullet-icon">\u2726</span>
               <span>${b}</span>
             </div>
           `).join('')}
@@ -982,4 +982,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+// Trigger redeploy
 

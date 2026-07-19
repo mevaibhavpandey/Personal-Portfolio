@@ -114,7 +114,7 @@ export const projects = [
       { label: 'Environment', value: 'GPS-Denied' },
     ],
     color: '#10B981',
-    icon: '🚁',
+    icon: '\uD83D\uDE80',
   },
 ]
 
@@ -168,7 +168,7 @@ export const certifications = [
       "Completed Oracle's AI Foundations Associate program covering AI/ML fundamentals, deep learning, neural networks, and LLMs on Oracle Cloud Infrastructure (OCI).",
     file: '/assets/pdfs/Oracle Certificate.pdf',
     type: 'pdf',
-    icon: '🏛️',
+    icon: '\uD83D\uDEDB\uFE0F',
   },
   {
     id: 2,
@@ -198,7 +198,7 @@ export const certifications = [
       'Certificate of participation at ICMOTA (Indian Conference on Military Technology & Applications) hosted at IIT Varanasi (BHU).',
     file: '/assets/images/certifications/ICMOTA Certificate.jpeg',
     type: 'image',
-    icon: '🎖️',
+    icon: '\uD83C\uDF96\uFE0F',
   },
   {
     id: 5,
@@ -219,7 +219,7 @@ export const certifications = [
     file: null,
     link: 'https://www.cloudskillsboost.google/',
     type: 'external',
-    icon: '☁️',
+    icon: '\u2601\uFE0F',
   },
 ]
 
@@ -261,7 +261,7 @@ export const achievements = [
     title: 'AIR 31 — 153rd NDA Course (IAF Flying Branch)',
     org: 'Union Public Service Commission (UPSC)',
     description: 'Secured All-India Rank 31 in NDA (I) 2024 examination, selected for the prestigious Indian Air Force Flying Branch.',
-    icon: '✈️',
+    icon: '\u2708\uFE0F',
     color: '#60A5FA',
   },
   {
@@ -269,7 +269,7 @@ export const achievements = [
     title: 'AIR 50 — 52nd TES Course (Indian Army)',
     org: 'Indian Army Technical Entry Scheme',
     description: 'Secured All-India Rank 50 in TES-52, selected for the Indian Army Technical Entry Scheme — a testament to technical aptitude and leadership potential.',
-    icon: '⭐',
+    icon: '\u2B50',
     color: '#10B981',
   },
   {
@@ -277,7 +277,7 @@ export const achievements = [
     title: 'National-Level Basketball — Gold Medalist',
     org: 'Regional / College Athletics',
     description: 'Competed at national level in basketball and clinched a gold medal at the regional tournament, demonstrating team leadership and athletic excellence.',
-    icon: '🏀',
+    icon: '\uD83C\uDFC0',
     color: '#F97316',
   },
 ]
